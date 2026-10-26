@@ -107,20 +107,29 @@ bakery case or a wall menu actually holds.
 
 ---
 
-## 5. Hosting
+## 5. Live
+
+| Business | Site |
+|---|---|
+| Tao Hong | https://tao-hong.onrender.com |
+| 46 Mott Deli | https://four6-mott-deli.onrender.com |
+| Fu Zhou Wei Zhong Wei | https://fu-zhou-wei-zhong-wei.onrender.com |
+| Shui Mei Cafe | https://shui-mei-cafe.onrender.com |
+| M&W Bakery | https://mw-bakery.onrender.com |
+| Yue Lai Bakery | https://yue-lai-bakery.onrender.com |
+| Happy Star | https://happy-star-bakery.onrender.com |
+
+Two names are not what you would guess, because Render rewrites subdomains:
+
+- **46 Mott Deli** is at `four6-mott-deli` — an onrender.com subdomain cannot
+  begin with a digit, so Render spelled the 4 out.
+- **Happy Star** is at `happy-star-bakery` — `happy-star` was already taken by
+  another Render customer.
 
 Repository: https://github.com/akilfoster2002-halo/chinatown-concept-sites
-(**private**)
+(**public** — see the note below)
 
-**Not yet live.** Render cannot fetch a private repository it has not been
-granted access to, so the seven static sites have not been created. One of
-two things unblocks it:
-
-- give Render access to this repository (GitHub → Settings → Applications →
-  Render → add `chinatown-concept-sites`), or
-- make the repository public.
-
-Once either is done, each site is created with:
+Each site is its own Render static site, all built from this one repository:
 
 | | |
 |---|---|
@@ -128,6 +137,18 @@ Once either is done, each site is created with:
 | Publish directory | `dist/<slug>` |
 | Branch | `main`, auto-deploy on |
 
-Planned URLs, one per slug: `tao-hong`, `46-mott-deli`,
-`fu-zhou-wei-zhong-wei`, `shui-mei-cafe`, `mw-bakery`, `yue-lai-bakery`,
-`happy-star` — each at `https://<slug>.onrender.com`.
+Push to `main` and all seven rebuild.
+
+### A note on the repository being public
+
+It was made public deliberately, to let Render fetch it. Render was never
+connected to this GitHub account — every other service in the workspace
+deploys from a public repo, which Render clones anonymously, so the
+connection had simply never been needed.
+
+The consequence worth remembering: this repository is searchable on GitHub,
+and it contains the names and phone numbers of seven businesses alongside
+candid notes about their weak points. The *pages* are `noindex`; the
+*repository* is not. If that becomes uncomfortable, connect Render to GitHub
+properly and flip the repository back to private — the sites will keep
+building.
