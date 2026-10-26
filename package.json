@@ -1,0 +1,12 @@
+{
+  "name": "chinatown-sites",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Concept websites for Manhattan Chinatown food businesses that have no site of their own.",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch",
+    "serve": "node build.js && python3 -m http.server 5173 --directory dist"
+  }
+}

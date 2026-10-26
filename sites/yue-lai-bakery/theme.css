@@ -1,0 +1,56 @@
+/* Yue Lai — six in the morning. Night blue giving way to the first warm
+   light, and an editorial serif, because the hours are the story. */
+
+:root {
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Newsreader', Georgia, serif;
+  --wordmark-weight: 600;
+
+  --bg: #fcfbf8;
+  --fg: #16181f;
+  --dim: #5a6070;
+  --line: #e0e1e6;
+  --leader: rgba(90, 96, 112, 0.3);
+
+  --accent: #8a5a11;        /* 5.8:1 on the off-white */
+  --accent-ink: #fffaf1;
+  --accent-hover: #6f4709;
+  --accent-text: #8a5a11;
+  --focus: #1d2b44;
+
+  --ribbon-bg: #1d2b44;
+  --ribbon-fg: #dbe3f0;
+
+  --head-bg: rgba(252, 251, 248, 0.94);
+  --head-fg: #16181f;
+  --head-line: #e0e1e6;
+
+  --hero-bg: #1d2b44;
+  --hero-fg: #eef2fa;
+  --hero-accent: #f0b256;
+  --hero-tracking: -0.025em;
+
+  --sig-bg: #f6ead6;
+  --sig-fg: #241a09;
+  --sig-accent: #8a5a11;
+
+  --alt-bg: #f4f5f8;
+  --alt-fg: #16181f;
+  --bar-track: #e2e4ea;
+  --bar-fill: #1d2b44;
+
+  --note-bg: #1d2b44;
+  --note-fg: #eef2fa;
+
+  --foot-bg: #141b29;
+  --foot-fg: #dde3ee;
+  --foot-line: rgba(221, 227, 238, 0.2);
+}
+
+.hero__title { font-weight: 600; }
+.hero__title em { font-style: italic; }
+.section-title { font-weight: 600; }
+.menu-note__text a { color: #f0b256; }
+.foot-link { color: #f0b256; }
+.ribbon__link { color: #f6cf9a; }

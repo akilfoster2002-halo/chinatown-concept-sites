@@ -1,0 +1,58 @@
+/* M&W — the storefront is a white sign with red lettering over a green
+   window frame. No gloss, no gradient. The design does what the shop does. */
+
+:root {
+  --font-display: 'Zilla Slab', Georgia, serif;
+  --font-body: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Zilla Slab', Georgia, serif;
+  --wordmark-weight: 700;
+
+  --bg: #ffffff;
+  --fg: #1e1e1e;
+  --dim: #5d5d5d;
+  --line: #e2e2e2;
+  --leader: rgba(93, 93, 93, 0.3);
+
+  --accent: #b5281b;        /* 6.6:1 on white */
+  --accent-ink: #ffffff;
+  --accent-hover: #951f14;
+  --accent-text: #b5281b;
+  --focus: #b5281b;
+
+  --ribbon-bg: #2e4f45;
+  --ribbon-fg: #e6f0ec;
+
+  --head-bg: rgba(255, 255, 255, 0.95);
+  --head-fg: #1e1e1e;
+  --head-line: #e2e2e2;
+
+  --hero-bg: #f4f1ea;
+  --hero-fg: #1e1e1e;
+  --hero-accent: #b5281b;
+  --hero-tracking: -0.02em;
+
+  --sig-bg: #2e4f45;
+  --sig-fg: #eef5f1;
+  --sig-accent: #9ed3bd;
+
+  --alt-bg: #f6f6f4;
+  --alt-fg: #1e1e1e;
+  --bar-track: #e4e4e0;
+  --bar-fill: #2e4f45;
+
+  --note-bg: #f4f1ea;
+  --note-fg: #1e1e1e;
+
+  --foot-bg: #1e1e1e;
+  --foot-fg: #ececec;
+  --foot-line: rgba(236, 236, 236, 0.2);
+
+  --btn-radius: 3px;
+}
+
+/* The sign is a rule under the name. So is the wordmark. */
+.wordmark__name { border-bottom: 4px solid #3f7d6a; padding-bottom: 2px; }
+.hero__title { font-weight: 700; }
+.menu-note__text a { color: #b5281b; }
+.foot-link { color: #f0a79d; }
+.ribbon__link { color: #ffffff; }

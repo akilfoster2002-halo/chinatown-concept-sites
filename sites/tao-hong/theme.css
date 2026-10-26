@@ -1,0 +1,58 @@
+/* Tao Hong — the custard. Egg-tart yellow against a dark roasted brown,
+   with the fluted pastry edge as the one piece of ornament. */
+
+:root {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Karla', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Fraunces', Georgia, serif;
+  --wordmark-weight: 900;
+
+  --bg: #fffdf6;
+  --fg: #231a0b;
+  --dim: #6b5c42;
+  --line: #e3d7bd;
+  --leader: rgba(107, 92, 66, 0.3);
+
+  --accent: #8a5a0b;        /* 5.9:1 on the cream background */
+  --accent-ink: #fffdf6;
+  --accent-hover: #6f4808;
+  --accent-text: #8a5a0b;
+  --focus: #8a5a0b;
+
+  --ribbon-bg: #231a0b;
+  --ribbon-fg: #f6e6bf;
+
+  --head-bg: rgba(255, 253, 246, 0.92);
+  --head-fg: #231a0b;
+  --head-line: #e3d7bd;
+
+  --hero-bg: #2b1f0c;
+  --hero-fg: #fff6dd;
+  --hero-accent: #ffd95e;
+  --hero-tracking: -0.025em;
+
+  --sig-bg: #ffd95e;
+  --sig-fg: #2b1f0c;
+  --sig-accent: #7a4a05;
+
+  --alt-bg: #fdf6e4;
+  --alt-fg: #231a0b;
+  --bar-track: #ecdfc2;
+  --bar-fill: #c98a1a;
+
+  --note-bg: #2b1f0c;
+  --note-fg: #fff6dd;
+
+  --foot-bg: #1b1407;
+  --foot-fg: #f0e2c2;
+  --foot-line: rgba(240, 226, 194, 0.22);
+}
+
+.hero__title { font-weight: 900; }
+.signature__title { font-weight: 900; }
+.menu-note__text a { color: #ffd95e; }
+.foot-link { color: #ffd95e; }
+.ribbon__link { color: #ffd95e; }
+
+/* The ornament is a tart seen from directly above; let it sit low and large. */
+.hero__ornament { right: -3rem; width: min(40vw, 24rem); }

@@ -1,0 +1,64 @@
+/* Fu Zhou Wei Zhong Wei — the stall sign is red characters on deep green,
+   under basement fluorescents. Condensed signwriting type, steel and steam. */
+
+:root {
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Oswald', 'Arial Narrow', sans-serif;
+  --wordmark-weight: 600;
+  --wordmark-tracking: 0.01em;
+
+  --bg: #f4f6f4;
+  --fg: #14201c;
+  --dim: #55635d;
+  --line: #d3ded8;
+  --leader: rgba(85, 99, 93, 0.32);
+
+  --accent: #b32415;        /* 6.2:1 on the pale ground */
+  --accent-ink: #ffffff;
+  --accent-hover: #951c10;
+  --accent-text: #b32415;
+  --focus: #15423a;
+
+  --ribbon-bg: #0f2b25;
+  --ribbon-fg: #d6e7df;
+
+  --head-bg: rgba(244, 246, 244, 0.94);
+  --head-fg: #14201c;
+  --head-line: #d3ded8;
+
+  --hero-bg: #15423a;
+  --hero-fg: #eaf4ef;
+  --hero-accent: #ff6a52;
+  --hero-tracking: -0.01em;
+
+  --sig-bg: #0f2b25;
+  --sig-fg: #e4efe9;
+  --sig-accent: #ff8a74;
+
+  --alt-bg: #e8eeea;
+  --alt-fg: #14201c;
+  --bar-track: #cfdbd5;
+  --bar-fill: #15423a;
+
+  --note-bg: #0f2b25;
+  --note-fg: #e4efe9;
+
+  --foot-bg: #0b1e1a;
+  --foot-fg: #cfe0d8;
+  --foot-line: rgba(207, 224, 216, 0.22);
+
+  --btn-radius: 2px;
+}
+
+.hero__title { text-transform: uppercase; letter-spacing: 0.01em; font-weight: 600; }
+.cat__name, .section-title { text-transform: uppercase; letter-spacing: 0.02em; }
+.menu-note__text a { color: #ff8a74; }
+.foot-link { color: #ff8a74; }
+.ribbon__link { color: #ffb8a8; }
+
+/* The stall number, used the way the mall uses it. */
+.hero__eyebrow::after {
+  content: ' · B45';
+  color: var(--hero-accent);
+}

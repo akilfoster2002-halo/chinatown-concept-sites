@@ -1,0 +1,58 @@
+/* Shui Mei — the awning is a gold-yellow panel with magenta script lettering.
+   That pairing is unusual enough to be the whole identity. */
+
+:root {
+  --font-display: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Lobster Two', cursive;
+  --wordmark-weight: 700;
+
+  --bg: #fffaf0;
+  --fg: #2b1d26;
+  --dim: #6a5560;
+  --line: #ecdcc6;
+  --leader: rgba(106, 85, 96, 0.3);
+
+  --accent: #8c2466;        /* 7.8:1 on the warm white */
+  --accent-ink: #fff6e2;
+  --accent-hover: #731c54;
+  --accent-text: #8c2466;
+  --focus: #8c2466;
+
+  --ribbon-bg: #2b1d26;
+  --ribbon-fg: #f8dfa6;
+
+  --head-bg: rgba(255, 250, 240, 0.94);
+  --head-fg: #2b1d26;
+  --head-line: #ecdcc6;
+
+  --hero-bg: #f2b705;
+  --hero-fg: #2b1d26;
+  --hero-accent: #8c2466;
+  --hero-tracking: -0.02em;
+
+  --sig-bg: #2b1d26;
+  --sig-fg: #fdf0d6;
+  --sig-accent: #f6c445;
+
+  --alt-bg: #fdf1dc;
+  --alt-fg: #2b1d26;
+  --bar-track: #ecdcc6;
+  --bar-fill: #8c2466;
+
+  --note-bg: #2b1d26;
+  --note-fg: #fdf0d6;
+
+  --foot-bg: #241821;
+  --foot-fg: #f4e4cd;
+  --foot-line: rgba(244, 228, 205, 0.22);
+}
+
+/* The wordmark is the awning: script, and set on a slant like painted signage. */
+.wordmark__name { transform: skewX(-6deg); display: inline-block; }
+.hero__title { font-weight: 600; }
+.hero__title em { font-family: 'Lobster Two', cursive; font-style: italic; }
+
+.menu-note__text a { color: #f6c445; }
+.foot-link { color: #f6c445; }
+.ribbon__link { color: #f8dfa6; }

@@ -1,0 +1,57 @@
+/* Happy Star — the awning is cream and pale mint with a pink bubble tea
+   drawn on it. Rounded type, soft shapes, nothing shouting. */
+
+:root {
+  --font-display: 'Quicksand', ui-rounded, system-ui, sans-serif;
+  --font-body: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Quicksand', ui-rounded, system-ui, sans-serif;
+  --wordmark-weight: 700;
+
+  --bg: #fffcf6;
+  --fg: #22302e;
+  --dim: #5c6b68;
+  --line: #e2ded2;
+  --leader: rgba(92, 107, 104, 0.3);
+
+  --accent: #1f6f66;        /* 5.6:1 on the cream */
+  --accent-ink: #fffcf6;
+  --accent-hover: #185a53;
+  --accent-text: #1f6f66;
+  --focus: #1f6f66;
+
+  --ribbon-bg: #22302e;
+  --ribbon-fg: #d8ece8;
+
+  --head-bg: rgba(255, 252, 246, 0.94);
+  --head-fg: #22302e;
+  --head-line: #e2ded2;
+
+  --hero-bg: #e6f1ee;
+  --hero-fg: #1b2927;
+  --hero-accent: #1f6f66;
+  --hero-tracking: -0.025em;
+
+  --sig-bg: #1f6f66;
+  --sig-fg: #f0faf7;
+  --sig-accent: #ffd9e2;
+
+  --alt-bg: #fdf6ea;
+  --alt-fg: #22302e;
+  --bar-track: #e6e1d4;
+  --bar-fill: #3f9e94;
+
+  --note-bg: #e6f1ee;
+  --note-fg: #1b2927;
+
+  --foot-bg: #1b2927;
+  --foot-fg: #e2efec;
+  --foot-line: rgba(226, 239, 236, 0.2);
+
+  --btn-radius: 999px;
+}
+
+.hero__title { font-weight: 700; }
+.wordmark__name { letter-spacing: 0.01em; }
+.menu-note__text a { color: #1f6f66; }
+.foot-link { color: #8fd4c9; }
+.ribbon__link { color: #a9e0d8; }

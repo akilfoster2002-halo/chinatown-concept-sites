@@ -1,0 +1,63 @@
+/* 46 Mott — taken straight off the awning: pillar-box red, a yellow panel,
+   and the jade green of the shopfront frame. Signage type, set big. */
+
+:root {
+  --font-display: 'Archivo Black', Impact, sans-serif;
+  --font-body: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: 'Archivo Black', Impact, sans-serif;
+  --wordmark-weight: 400;
+  --wordmark-tracking: -0.03em;
+
+  --bg: #fffdf8;
+  --fg: #1a1512;
+  --dim: #5f564e;
+  --line: #e6ddcd;
+  --leader: rgba(95, 86, 78, 0.3);
+
+  --accent: #c8102e;        /* 6.4:1 on the near-white background */
+  --accent-ink: #ffffff;
+  --accent-hover: #a50d26;
+  --accent-text: #c8102e;
+  --focus: #c8102e;
+
+  --ribbon-bg: #1a1512;
+  --ribbon-fg: #ffe9a8;
+
+  --head-bg: rgba(255, 253, 248, 0.94);
+  --head-fg: #1a1512;
+  --head-line: #e6ddcd;
+
+  --hero-bg: #c8102e;
+  --hero-fg: #fff8e4;
+  --hero-accent: #ffcf2d;
+  --hero-tracking: -0.035em;
+
+  --sig-bg: #ffcf2d;
+  --sig-fg: #241a05;
+  --sig-accent: #8d0a20;
+
+  --alt-bg: #f6f0e2;
+  --alt-fg: #1a1512;
+  --bar-track: #e4d9c2;
+  --bar-fill: #c8102e;
+
+  --note-bg: #26231f;
+  --note-fg: #fff8e4;
+
+  --foot-bg: #1a1512;
+  --foot-fg: #f3e8d4;
+  --foot-line: rgba(243, 232, 212, 0.22);
+
+  --btn-radius: 4px;        /* signwriting, not soft UI */
+}
+
+.hero__title { text-transform: uppercase; line-height: 0.92; }
+.menu-note__text a { color: #ffcf2d; }
+.foot-link { color: #ffcf2d; }
+.ribbon__link { color: #ffcf2d; }
+
+/* A note of the shopfront's green, used only as a rule. */
+.visit__aside { border-color: #7f8c3f; }
+.unknowns { border-color: #7f8c3f; }
+
+.src { display: block; margin-top: 0.4rem; font-size: 0.82em; color: var(--dim); }
