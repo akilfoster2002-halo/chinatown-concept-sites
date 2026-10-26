@@ -46,6 +46,12 @@ async function buildSite(slug, stamp) {
   await cp(path.join(dir, 'theme.css'), path.join(outDir, 'styles', 'theme.css'));
   await cp(path.join(SHARED, 'scripts', 'site.js'), path.join(outDir, 'scripts', 'site.js'));
 
+  // Each site's photography lives beside its data and ships as-is.
+  const imgSrc = path.join(dir, 'images');
+  if (existsSync(imgSrc)) {
+    await cp(imgSrc, path.join(outDir, 'images'), { recursive: true });
+  }
+
   // Tell crawlers to leave concept sites alone.
   await writeFile(
     path.join(outDir, 'robots.txt'),

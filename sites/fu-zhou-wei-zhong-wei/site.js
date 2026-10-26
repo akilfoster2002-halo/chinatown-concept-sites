@@ -128,6 +128,20 @@ export default {
      is used here.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'Steamed buns in bamboo baskets with steam rising at a food stall',
+    showcaseTitle: 'What comes out of the steamer',
+    showcaseLede: 'Small, hot, cheap, and the reason 596 people found their way to a basement.',
+    dishes: [
+      { label: 'Steamed buns', alt: 'Plain white steamed buns in a bamboo steamer' },
+      { label: 'The steamer stack', alt: 'Bamboo steamers stacked at a Chinese street food stall' },
+      { label: 'Fried dumplings', alt: 'Golden fried dumplings on a black dish with chopsticks' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
     <g stroke="#9fb3a8" stroke-width="5" fill="#d9e2db">
       <ellipse cx="120" cy="188" rx="86" ry="22"/>

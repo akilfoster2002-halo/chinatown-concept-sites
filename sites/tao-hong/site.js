@@ -152,6 +152,20 @@ export default {
      is assembled from what reviewers name, and it is certainly incomplete.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'Hong Kong style egg tarts cooling on a metal bakery tray',
+    showcaseTitle: 'Three things from the case',
+    showcaseLede: 'The egg tarts are the headline. These are the rest of why people stop.',
+    dishes: [
+      { label: 'Egg tarts', alt: 'Trays of Hong Kong style egg tarts with glossy yellow custard' },
+      { label: 'Moon cakes', alt: 'A Chinese moon cake cut open to show a salted egg yolk centre' },
+      { label: 'Milk tea', alt: 'A tall glass of Hong Kong style milk tea poured over ice' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 220 220" fill="none" aria-hidden="true">
     <circle cx="110" cy="110" r="96" fill="#d8a63c"/>
     <g>${Array.from({ length: 44 })

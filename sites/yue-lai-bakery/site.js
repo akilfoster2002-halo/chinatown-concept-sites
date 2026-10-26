@@ -139,6 +139,20 @@ export default {
      those photographs.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'Racks of freshly baked Chinese buns lit by early morning sun',
+    showcaseTitle: 'Out of the oven by six',
+    showcaseLede: 'The case is full before most of East Broadway has unlocked.',
+    dishes: [
+      { label: 'The shelves', alt: 'Shelves of Chinese buns and pastries in a bakery' },
+      { label: 'Cream buns', alt: 'Cream filled buns split open on a tray' },
+      { label: 'Iced coffee', alt: 'An iced coffee in a plastic cup on a table' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
     <defs><linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1d2b44"/><stop offset=".55" stop-color="#5b5676"/>

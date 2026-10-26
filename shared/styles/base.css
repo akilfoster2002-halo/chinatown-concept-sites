@@ -343,3 +343,71 @@ a { color: inherit; }
   .reveal { opacity: 1; transform: none; }
   .mention__bar i { animation: none; }
 }
+
+/* ------------------------------------------------------------ photography */
+
+/* The photo sits BESIDE the words, never under them. Text over a photograph
+   makes contrast depend on the picture; this cannot go wrong, and the food
+   is never half-buried under a scrim. */
+
+.hero--photo .hero__inner { max-width: none; }
+
+.hero__grid { display: grid; gap: clamp(2rem, 4vw, 3rem); align-items: center; }
+
+@media (min-width: 54rem) {
+  .hero__grid { grid-template-columns: 1fr 0.88fr; gap: clamp(2.5rem, 5vw, 4rem); }
+  .hero--photo .hero__lede { max-width: 32rem; }
+}
+
+.hero__media {
+  margin: 0;
+  border-radius: var(--photo-radius, 18px);
+  overflow: hidden;
+  background: rgba(var(--hero-rgb), 0.35);
+  box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.55);
+}
+.hero__media img {
+  width: 100%; height: auto; display: block;
+  aspect-ratio: 4 / 3; object-fit: cover;
+}
+
+.menu-hero.hero--photo .hero__media img { aspect-ratio: 16 / 9; }
+@media (min-width: 54rem) {
+  .menu-hero.hero--photo .hero__grid { grid-template-columns: 1fr 0.72fr; }
+}
+
+/* ---------------------------------------------------------------- showcase */
+
+.showcase { padding-block: var(--section-y); }
+
+/* Explicit tracks, not auto-fit: auto-fit leaves an empty final column when
+   the item count does not fill the row, and that empty track still takes a
+   gap -- dead space at the right edge. */
+.dish-grid {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: clamp(1rem, 2.5vw, 1.75rem);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 40rem) { .dish-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 58rem) { .dish-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.dish { display: grid; gap: 0.85rem; }
+
+.dish__img {
+  width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;
+  border-radius: var(--photo-radius, 18px);
+  background: var(--alt-bg);
+}
+
+.dish__label {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  line-height: 1.2;
+}
+
+.photo-note {
+  margin-top: 2rem; max-width: 42rem;
+  font-size: var(--step--1); color: var(--dim);
+}
+
+.foot-photo-note { margin-top: 1em; opacity: 0.85; }

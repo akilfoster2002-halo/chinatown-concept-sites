@@ -93,13 +93,42 @@ bakery case or a wall menu actually holds.
 
 ---
 
-## 4. What is not on these sites, deliberately
+## 4. About the photographs
 
-- **No photographs.** Every usable image of these businesses belongs to a
-  Google reviewer or a publication. They were used as reference for colour and
-  art direction — which is what a photograph of a storefront is for — but none
-  is reproduced. Stock food photography would imply it is their food, so there
-  is none of that either. Each site carries a drawn SVG instead.
+Every site now carries food photography, because a food business without
+pictures of food does not sell. None of it was taken at these businesses.
+
+**What was used**
+
+- **Generated images** for four heroes (Tao Hong, Shui Mei Cafe, M&W Bakery,
+  Yue Lai Bakery), art-directed to each site's existing palette.
+- **Licensed stock** (Pexels licence, free for commercial use) for the other
+  three heroes and all twenty-one dish photographs.
+
+**What was not used, and why**
+
+Google reviewers and publications have hundreds of photographs of these exact
+shops and their exact food. Those belong to the people who took them.
+Republishing them on public sites carrying a business name is copyright
+infringement, and the exposure would sit with whoever published the site.
+So none were used — they served only as reference for colour and art
+direction, which is what looking at a photograph is for.
+
+**How this is disclosed**
+
+Every page that shows a photograph carries a caption saying the pictures are
+representative of the dishes named, not taken at that shop, and the same note
+repeats in the footer. A visitor cannot reasonably come away thinking these
+are photographs of that kitchen's own food.
+
+**This is the first thing to replace with a real client.** An hour walking
+East Broadway with a phone would beat all of it, and it is the single biggest
+upgrade available to any of these seven sites.
+
+---
+
+## 4b. What else is not on these sites, deliberately
+
 - **No schema.org structured data.** Publishing `LocalBusiness` markup for a
   business that has not asked would hand search engines a claim this site has
   no standing to make. Switch it on when there is a client.

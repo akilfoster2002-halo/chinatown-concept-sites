@@ -127,6 +127,20 @@ export default {
      bakery. Most of what this shop sells is not named anywhere online.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'Glossy baked roast pork buns on a white enamel tray, one torn open',
+    showcaseTitle: 'No styling, just the case',
+    showcaseLede: 'A plain bakery doing plain bakery things extremely consistently.',
+    dishes: [
+      { label: 'The case', alt: 'A Chinese bakery display case full of buns and pastries' },
+      { label: 'Pineapple buns', alt: 'Three golden pineapple buns on a plate' },
+      { label: 'Pork floss buns', alt: 'Small pork floss buns on a white plate' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
     <rect x="16" y="40" width="208" height="54" rx="4" fill="#ffffff" stroke="#d8cfc0" stroke-width="3"/>
     <text x="120" y="78" font-family="Zilla Slab, Georgia, serif" font-size="34" font-weight="700"

@@ -135,6 +135,20 @@ export default {
      read the one-star reviews as well as the five-star ones.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'A bowl of congee with scallions on a wooden table',
+    showcaseTitle: 'One room, two counters',
+    showcaseLede: 'Savoury on one side, sweet on the other, both open from half six.',
+    dishes: [
+      { label: 'Congee', alt: 'A bowl of pork congee topped with fresh coriander' },
+      { label: 'Wontons', alt: 'Wontons in soup in a blue patterned bowl' },
+      { label: 'Egg tarts', alt: 'Egg tarts with caramelised tops on a display tray' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
     <rect x="30" y="34" width="180" height="56" rx="6" fill="#fdf3e3"/>
     <rect x="30" y="78" width="180" height="16" rx="4" fill="#3f9e94"/>

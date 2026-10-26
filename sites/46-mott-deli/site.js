@@ -156,6 +156,20 @@ export default {
      menu. Anything shelf-stable may come and go.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'Bowls of tofu pudding and other Cantonese sweet snacks',
+    showcaseTitle: 'Old-school, on purpose',
+    showcaseLede: 'Snacks that used to be on every block in Chinatown and now are mostly not.',
+    dishes: [
+      { label: 'Tofu pudding', alt: 'A bowl of soft warm tofu pudding' },
+      { label: 'Congee and buns', alt: 'A Chinese breakfast of steamed buns beside red bean porridge' },
+      { label: 'Rice cakes', alt: 'Snow skin rice cakes in pink and white on a tray' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
     <rect x="18" y="52" width="204" height="136" rx="10" fill="#c8102e"/>
     <rect x="30" y="64" width="180" height="112" rx="5" fill="#ffcf2d"/>

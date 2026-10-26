@@ -134,6 +134,20 @@ export default {
      on the Google listing.`,
   ],
 
+  // Photography lives in sites/<slug>/images/. These are representative
+  // images of the dishes named, not photographs taken at this business --
+  // every page that shows one says so.
+  images: {
+    heroAlt: 'A bowl of peanut noodles topped with scallions and sesame seeds',
+    showcaseTitle: 'Noodles first, then everything else',
+    showcaseLede: 'Fuzhou home cooking at counter prices. Order the noodles, then work outwards.',
+    dishes: [
+      { label: 'Peanut noodles', alt: 'Flat wheat noodles coated in peanut sauce with scallions and sesame' },
+      { label: 'Wonton soup', alt: 'Wontons in a clear broth in a blue rimmed bowl' },
+      { label: 'Pan-fried dumplings', alt: 'Pork dumplings with scallions on a plate' },
+    ],
+  },
+
   ornament: `<svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
     <circle cx="120" cy="124" r="92" fill="#2b2320"/>
     <circle cx="120" cy="124" r="78" fill="#3a302b"/>

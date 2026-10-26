@@ -101,6 +101,7 @@ function footer(site) {
         <p class="foot-about">
           ${esc(site.name)} &mdash; if you want this, it is yours.
         </p>
+        ${site.images ? `<p class="foot-about foot-photo-note">${PHOTO_NOTE}</p>` : ''}
       </div>
     </div>
 
@@ -157,6 +158,58 @@ ${body}
 function favicon(site) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="${site.favicon.bg}"/><text x="16" y="23" font-family="Georgia,serif" font-size="19" font-weight="700" text-anchor="middle" fill="${site.favicon.fg}">${site.favicon.glyph}</text></svg>`;
 }
+
+
+/* ----------------------------------------------------------------- photos */
+
+/**
+ * The hero photograph.
+ *
+ * It sits beside the words rather than behind them. Putting text over a
+ * photograph means contrast depends on what happens to be in the picture;
+ * side by side, it cannot go wrong, and the food is never half-hidden under
+ * a scrim.
+ */
+function heroMedia(site) {
+  if (!site.images) return '';
+  return `<figure class="hero__media">
+      <img src="images/hero.webp" alt="${esc(site.images.heroAlt)}"
+           width="1600" height="1067" fetchpriority="high" decoding="async">
+    </figure>`;
+}
+
+function showcase(site) {
+  if (!site.images?.dishes?.length) return '';
+  return `<section class="showcase reveal" aria-labelledby="showcase-title">
+  <div class="wrap">
+    <h2 class="section-title" id="showcase-title">${esc(site.images.showcaseTitle)}</h2>
+    <p class="section-lede">${site.images.showcaseLede}</p>
+    <ul class="dish-grid">
+      ${site.images.dishes
+        .map(
+          (d, i) => `<li class="dish">
+        <img class="dish__img" src="images/dish-${i + 1}.webp" alt="${esc(d.alt)}"
+             width="760" height="760" loading="lazy" decoding="async">
+        <span class="dish__label">${esc(d.label)}</span>
+      </li>`
+        )
+        .join('\n      ')}
+    </ul>
+    <p class="photo-note">${PHOTO_NOTE}</p>
+  </div>
+</section>`;
+}
+
+/**
+ * Said once, plainly, wherever a photograph appears.
+ *
+ * These are not photographs of this business's food. Letting a visitor think
+ * they were would be the one dishonest thing on an otherwise carefully
+ * sourced site, so the pictures carry their own caption.
+ */
+const PHOTO_NOTE = `Photographs are representative of the dishes named, not
+  taken at this shop. They are generated or licensed stock, used because no
+  photograph of this kitchen's own food was available to license.`;
 
 /* ---------------------------------------------------------------- sections */
 
@@ -258,8 +311,9 @@ function visitBlock(site) {
 
 export function homePage(site) {
   const body = `
-<section class="hero">
-  <div class="wrap hero__inner">
+<section class="hero${site.images ? ' hero--photo' : ''}">
+  <div class="wrap hero__grid">
+    <div class="hero__inner">
     <p class="hero__eyebrow">${esc(site.kind)} &middot; ${esc(site.neighborhood)}</p>
     <h1 class="hero__title">${site.heroTitle}</h1>
     <p class="hero__lede">${site.lede}</p>
@@ -272,8 +326,10 @@ export function homePage(site) {
       <b>${site.rating.value}</b> from ${site.rating.count.toLocaleString()} Google reviews
       &middot; ${esc(site.hours.display)}${site.payment ? ` &middot; ${esc(site.payment)}` : ''}
     </p>
+    </div>
+    ${heroMedia(site)}
   </div>
-  <div class="hero__ornament" aria-hidden="true">${site.ornament}</div>
+  ${site.images ? '' : `<div class="hero__ornament" aria-hidden="true">${site.ornament}</div>`}
 </section>
 
 <section class="signature reveal" aria-labelledby="sig-title">
@@ -282,6 +338,8 @@ export function homePage(site) {
     <p class="signature__body">${site.signature.body}</p>
   </div>
 </section>
+
+${showcase(site)}
 
 <section class="story reveal" aria-labelledby="story-title">
   <div class="wrap story__inner">
@@ -340,11 +398,14 @@ export function menuPage(site) {
   const count = site.sections.reduce((n, s) => n + s.items.length, 0);
 
   const body = `
-<section class="menu-hero">
-  <div class="wrap">
-    <p class="hero__eyebrow">${count} things &middot; ${site.sections.length} groups</p>
-    <h1 class="menu-hero__title">${esc(site.menuTitle)}</h1>
-    <p class="menu-hero__lede">${site.menuLede}</p>
+<section class="menu-hero${site.images ? ' hero--photo' : ''}">
+  <div class="wrap hero__grid">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">${count} things &middot; ${site.sections.length} groups</p>
+      <h1 class="menu-hero__title">${esc(site.menuTitle)}</h1>
+      <p class="menu-hero__lede">${site.menuLede}</p>
+    </div>
+    ${heroMedia(site)}
   </div>
 </section>
 

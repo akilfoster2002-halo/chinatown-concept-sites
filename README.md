@@ -88,6 +88,23 @@ The hero ornament is an inline SVG in `site.js`, drawn from what the business
 actually looks like or sells — the egg tart, the yellow 46, the stack of
 steamer baskets.
 
+### Photography
+
+Each site has a hero photograph and three dish photographs in
+`sites/<slug>/images/`, served as WebP (1.7 MB across all seven sites).
+Four heroes are generated images art-directed to the site's palette; the rest
+are Pexels-licensed stock. **None were taken at these businesses**, and every
+page that shows one says so — see [VERIFICATION.md](VERIFICATION.md) § 4.
+
+The hero photo sits *beside* the headline rather than behind it. Text over a
+photograph makes contrast depend on whatever is in the picture; side by side,
+it cannot go wrong, and the food is never half-buried under a scrim.
+
+To swap in real photographs, replace the files in `sites/<slug>/images/`
+keeping the names (`hero.webp`, `dish-1.webp`…`dish-3.webp`), update the
+`alt` text in that site's `site.js`, and delete the `PHOTO_NOTE` caption from
+`shared/templates.js`. Heroes are 1600×1067, dishes 760×760.
+
 ### Where each identity came from
 
 Nothing here is a stock template choice. Each palette was taken from the

@@ -27,6 +27,8 @@
   --head-line: #ecdcc6;
 
   --hero-bg: #f2b705;
+
+  --hero-rgb: 242, 183, 5; /* --hero-bg as channels, for the photo scrim */
   --hero-fg: #2b1d26;
   --hero-accent: #8c2466;
   --hero-tracking: -0.02em;
