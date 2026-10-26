@@ -129,8 +129,11 @@ They differ only in the build command and publish path:
 | Publish directory | `dist/<slug>` |
 | Auto-deploy | on, from `main` |
 
-Push to `main` and Render rebuilds. Live URLs are listed in
-[VERIFICATION.md](VERIFICATION.md).
+Push to `main` and Render rebuilds.
+
+The repository is **private**, which Render cannot fetch without being granted
+access to it, so the sites are not live yet. See
+[VERIFICATION.md](VERIFICATION.md) § 5 for the two ways to unblock that.
 
 ---
 

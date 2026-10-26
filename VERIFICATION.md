@@ -107,16 +107,27 @@ bakery case or a wall menu actually holds.
 
 ---
 
-## 5. Live
-
-| Site | URL |
-|---|---|
-| Tao Hong | https://tao-hong.onrender.com |
-| 46 Mott Deli | https://46-mott-deli.onrender.com |
-| Fu Zhou Wei Zhong Wei | https://fu-zhou-wei-zhong-wei.onrender.com |
-| Shui Mei Cafe | https://shui-mei-cafe.onrender.com |
-| M&W Bakery | https://mw-bakery.onrender.com |
-| Yue Lai Bakery | https://yue-lai-bakery.onrender.com |
-| Happy Star | https://happy-star.onrender.com |
+## 5. Hosting
 
 Repository: https://github.com/akilfoster2002-halo/chinatown-concept-sites
+(**private**)
+
+**Not yet live.** Render cannot fetch a private repository it has not been
+granted access to, so the seven static sites have not been created. One of
+two things unblocks it:
+
+- give Render access to this repository (GitHub → Settings → Applications →
+  Render → add `chinatown-concept-sites`), or
+- make the repository public.
+
+Once either is done, each site is created with:
+
+| | |
+|---|---|
+| Build command | `node build.js <slug>` |
+| Publish directory | `dist/<slug>` |
+| Branch | `main`, auto-deploy on |
+
+Planned URLs, one per slug: `tao-hong`, `46-mott-deli`,
+`fu-zhou-wei-zhong-wei`, `shui-mei-cafe`, `mw-bakery`, `yue-lai-bakery`,
+`happy-star` — each at `https://<slug>.onrender.com`.
