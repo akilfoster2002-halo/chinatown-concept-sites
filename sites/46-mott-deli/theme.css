@@ -52,6 +52,12 @@
 }
 
 .hero__title { text-transform: uppercase; line-height: 0.92; }
+
+/* The accent red IS the hero's background here, so a primary button on the
+   hero would disappear into it. On the hero only, it takes the yellow off
+   the awning panel instead. */
+.hero .btn--primary { background: #ffcf2d; color: #241a05; }
+.hero .btn--primary:hover { background: #ffdb5c; }
 .menu-note__text a { color: #ffcf2d; }
 .foot-link { color: #ffcf2d; }
 .ribbon__link { color: #ffcf2d; }
